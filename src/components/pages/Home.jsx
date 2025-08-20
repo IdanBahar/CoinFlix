@@ -45,8 +45,10 @@ const HomePage = ({
       {error && <div className='error'> {error}</div>}
       <div className='top-controls'>
         <FilterInput filter={filter} onFilterChange={setFilter} />
-        <SortSelector sort={sortBy} onSortChange={setSortBy} />
-        <LimitSelector limit={limit} onLimitChange={setLimit} />
+        <div className='controls-container'>
+          <SortSelector sort={sortBy} onSortChange={setSortBy} />
+          <LimitSelector limit={limit} onLimitChange={setLimit} />
+        </div>
       </div>
       {!loading && !error && (
         <main className='grid'>

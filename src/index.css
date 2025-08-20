@@ -85,6 +85,12 @@ a {
 }
 
 /* Limit Select */
+.controls-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
 .controls {
   margin-bottom: 2rem;
   display: flex;
@@ -278,5 +284,21 @@ a {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .top-controls {
+    flex-direction: column;
+    .filter {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .controls-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
