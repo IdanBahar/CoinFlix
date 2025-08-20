@@ -1,12 +1,12 @@
 const AboutPage = () => {
   return (
     <div className='about'>
-      <h1>About Crypto Dashboard</h1>
+      <h1>About CoinFlix Dashboard</h1>
       <p>
         <strong>
           <u>Introduction </u>
         </strong>
-        Crypto Dash is a simple yet powerful dashboard application designed to
+        CoinFlix is a simple yet powerful dashboard application designed to
         track and analyze cryptocurrency data in real time. The app connects to
         an external API, such as CoinGecko, and displays up-to-date information
         about popular coins including their price, market capitalization, and
