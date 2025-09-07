@@ -3,18 +3,21 @@ import LimitSelector from '../LimitSelector'
 import FilterInput from '../FilterInput'
 import SortSelector from '../SortSelector'
 import Spinner from '../Spinner'
+import { useCoinContext } from '../context/CoinContext'
 
-const HomePage = ({
-  coins,
-  filter,
-  setFilter,
-  limit,
-  setLimit,
-  sortBy,
-  setSortBy,
-  loading,
-  error,
-}) => {
+const HomePage = () => {
+  const {
+    coins,
+    filter,
+    setFilter,
+    limit,
+    setLimit,
+    sortBy,
+    setSortBy,
+    loading,
+    error,
+  } = useCoinContext()
+
   const filteredCoins = coins
     .filter((coin) => {
       return (

@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router'
 import Spinner from '../Spinner'
 import CoinChart from '../CoinChart'
+import { useCoinContext } from '../context/CoinContext'
 const API_URL = import.meta.env.VITE_COIN_API_URL
 
 const CoinDetailsPage = () => {
   const { id } = useParams()
+
   const [coin, setCoin] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
