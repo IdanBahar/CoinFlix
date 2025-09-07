@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       <div className='top-nav'>
-        <h1>🚀 CoinFlix</h1>
+        <h1>CoinFlix ₿ </h1>
         <div style={{ display: 'flex', gap: '1rem' }}>
           <Link to='/'>Home</Link>
           <Link to='/about'>About</Link>
